@@ -8,7 +8,7 @@ import pandas as Pandas
 import seaborn as SeaBorn
 import matplotlib.pyplot as PyPlot
 
-year = '2016'
+year = '2018'
 # In[9]:
 
 
@@ -41,7 +41,7 @@ datasetPasto = Pandas.concat(datasets,sort=False)
 
 	
 #Debido al tamaño de los datos usaremos únicamente un sample de 100 muestras
-datasetPasto = datasetPasto.sample(100)
+datasetPasto = datasetPasto.sample(50)
 
 
 # In[11]:
