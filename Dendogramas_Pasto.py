@@ -41,7 +41,7 @@ datasetPasto = Pandas.concat(datasets,sort=False)
 
 	
 #Debido al tamaño de los datos usaremos únicamente un sample de 100 muestras
-datasetPasto = datasetPasto.sample(50)
+datasetPasto = datasetPasto.sample(60)
 
 
 # In[11]:
@@ -125,6 +125,7 @@ def crearGraficosParaVariable(nomVariable):
 
 
 #veamos cómo se ven algunos clusters
+#CUADROS DE DISTANCIAS
 crearGraficosParaVariable('Estado civil')
 
 # In[ ]:
@@ -142,6 +143,7 @@ def dendrogramaVariable(nomVariable,umbralDeDivision):
            above_threshold_color='grey')
     PyPlot.savefig("Imagenes/"+year+"/"+nomVariable+"_den.png")
 
+#ARBOLES DE DISTANCIA
 dendrogramaVariable('Sexo',1000)
 dendrogramaVariable('Estado civil',1000)
 
